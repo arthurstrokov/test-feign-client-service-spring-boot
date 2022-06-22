@@ -8,5 +8,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface SimpleClient {
 
     @GetMapping("/data/{dataId}")
-    SimpleClientData getData(@PathVariable int dataId);
+    SimpleClientData getData(@PathVariable("dataId") int dataId);
 }
